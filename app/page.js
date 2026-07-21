@@ -25,6 +25,7 @@ export default function HomePage() {
         <nav>
           <a href="#villas">Villas</a>
           <Link href="/el-madronal">El Madroñal</Link>
+          <Link href="/concierge">Concierge</Link>
           <a href="#standards">The Standard</a>
           <a href="#contact">Enquire</a>
         </nav>
@@ -118,6 +119,9 @@ export default function HomePage() {
             <div className="serviceList">
               {standards.map((item) => <span key={item}>{item}</span>)}
             </div>
+            <div className="actions">
+              <Link className="btn gold" href="/concierge">Explore concierge services</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -189,6 +193,7 @@ export default function HomePage() {
           <div>
             <strong>Explore</strong>
             <Link href="/el-madronal">El Madroñal Estate</Link>
+            <Link href="/concierge">Private Concierge</Link>
           </div>
           <div>
             <strong>Contact</strong>
