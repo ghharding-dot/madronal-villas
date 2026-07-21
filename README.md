@@ -1,3 +1,2 @@
 # Madroñal Villas
-
-Static website for Villa Candela and Villa Lámpara in El Madroñal, Marbella.
+Clean Next.js rebuild for Villa Candela and Villa Lámpara.
