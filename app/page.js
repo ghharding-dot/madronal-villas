@@ -24,6 +24,7 @@ export default function HomePage() {
         </Link>
         <nav>
           <a href="#villas">Villas</a>
+          <Link href="/el-madronal">El Madroñal</Link>
           <a href="#standards">The Standard</a>
           <a href="#contact">Enquire</a>
         </nav>
@@ -135,6 +136,9 @@ export default function HomePage() {
             <div><dt>Puerto Banús</dt><dd>Approximately 15 minutes</dd></div>
             <div><dt>Málaga Airport</dt><dd>Approximately 45 minutes</dd></div>
           </dl>
+          <div className="actions">
+            <Link className="btn gold" href="/el-madronal">Discover El Madroñal</Link>
+          </div>
         </div>
       </section>
 
@@ -181,6 +185,10 @@ export default function HomePage() {
             <strong>Villas</strong>
             <Link href="/villa-candela">Villa Candela</Link>
             <Link href="/villa-lampara">Villa Lámpara</Link>
+          </div>
+          <div>
+            <strong>Explore</strong>
+            <Link href="/el-madronal">El Madroñal Estate</Link>
           </div>
           <div>
             <strong>Contact</strong>
