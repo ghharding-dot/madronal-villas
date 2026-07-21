@@ -13,9 +13,4 @@ const Header = () => (
       <a href="#services">Concierge</a>
       <a href="#events">Events</a>
       <a className="enquire" href="#contact">Enquire</a>
-    </nav>
-  </header>
-);
-
-const Feature = ({ title, children }) => (
-  <div className
+    </
