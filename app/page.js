@@ -10,10 +10,12 @@ const Header = () => (
       <a href="#villas">Villas</a>
       <a href="#location">El Madroñal</a>
       <a href="#standards">Standards</a>
-      <a href="#services">Services</a>
+      <a href="#services">Concierge</a>
+      <a href="#events">Events</a>
       <a className="enquire" href="#contact">Enquire</a>
     </nav>
   </header>
 );
 
-const Feature = ({
+const Feature = ({ title, children }) => (
+  <div className
