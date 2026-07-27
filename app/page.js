@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ReservationForm from './components/ReservationForm';
 
 const standards = [
   '1 Gbps fibre internet',
@@ -158,23 +159,7 @@ export default function HomePage() {
             <a href="mailto:reservations@madronalvillas.com">reservations@madronalvillas.com</a>
           </div>
 
-          <form action="mailto:reservations@madronalvillas.com" method="post" encType="text/plain">
-            <label>Name<input name="name" required /></label>
-            <label>Email<input type="email" name="email" required /></label>
-            <label>Arrival<input type="date" name="arrival" /></label>
-            <label>Departure<input type="date" name="departure" /></label>
-            <label>Guests<input type="number" name="guests" min="1" /></label>
-            <label>Villa
-              <select name="villa" defaultValue="">
-                <option value="" disabled>Select a villa</option>
-                <option>Villa Candela</option>
-                <option>Villa Lámpara</option>
-                <option>Either villa</option>
-              </select>
-            </label>
-            <label className="full">Message<textarea name="message" /></label>
-            <button className="btn gold full" type="submit">Send enquiry</button>
-          </form>
+          <ReservationForm />
         </div>
       </section>
 
