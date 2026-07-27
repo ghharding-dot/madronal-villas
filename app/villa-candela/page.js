@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteHeader from '../components/SiteHeader';
 
 const galleryImages = [
   'hero',
@@ -45,18 +46,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <header className="header darkHeader">
-        <Link className="brand" href="/">
-          <span>MV</span>
-          <b>Madroñal Villas<small>Private Collection · Marbella</small></b>
-        </Link>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/villa-lampara">Lámpara</Link>
-          <Link href="/el-madronal">El Madroñal</Link>
-          <a className="enquire" href="#enquire">Enquire</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="villaHero candelaHero">

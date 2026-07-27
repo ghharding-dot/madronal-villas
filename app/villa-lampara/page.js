@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteHeader from '../components/SiteHeader';
 
 const galleryImages = [
   'aerial',
@@ -43,17 +44,7 @@ const outdoorFeatures = [
 export default function Page() {
   return (
     <>
-      <header className="header darkHeader">
-        <Link className="brand" href="/">
-          <span>MV</span>
-          <b>Madroñal Villas<small>Private Collection · Marbella</small></b>
-        </Link>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/villa-candela">Candela</Link>
-          <a className="enquire" href="#enquire">Enquire</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="villaHero lamparaHero">

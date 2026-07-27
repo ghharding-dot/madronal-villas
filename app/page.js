@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteHeader from './components/SiteHeader';
 import ReservationForm from './components/ReservationForm';
 
 const standards = [
@@ -15,22 +16,7 @@ const standards = [
 export default function HomePage() {
   return (
     <main>
-      <header className="header">
-        <Link className="brand" href="/">
-          <span>MV</span>
-          <b>
-            Madroñal Villas
-            <small>Private Collection · Marbella</small>
-          </b>
-        </Link>
-        <nav>
-          <a href="#villas">Villas</a>
-          <Link href="/el-madronal">El Madroñal</Link>
-          <Link href="/concierge">Concierge</Link>
-          <a href="#standards">The Standard</a>
-          <a href="#contact">Enquire</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <section className="hero">
         <div className="shade" />

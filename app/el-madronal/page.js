@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteHeader from '../components/SiteHeader';
 
 const distances = [
   ['Marbella', 'Approx. 15 minutes'],
@@ -18,17 +19,7 @@ const qualities = [
 export default function Page() {
   return (
     <>
-      <header className="header darkHeader">
-        <Link className="brand" href="/">
-          <span>MV</span>
-          <b>Madroñal Villas<small>Private Collection · Marbella</small></b>
-        </Link>
-        <nav>
-          <Link href="/villa-candela">Candela</Link>
-          <Link href="/villa-lampara">Lámpara</Link>
-          <a className="enquire" href="/#contact">Enquire</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="villaHero estateHero">
