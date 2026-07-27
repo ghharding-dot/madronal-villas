@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SiteHeader from '../components/SiteHeader';
 
 const services = [
   ['Private chefs', 'From relaxed family breakfasts to formal dinners and special celebrations, menus can be arranged around your preferences.'],
@@ -23,18 +24,7 @@ export const metadata = {
 export default function ConciergePage() {
   return (
     <>
-      <header className="header darkHeader">
-        <Link className="brand" href="/">
-          <span>MV</span>
-          <b>Madroñal Villas<small>Private Collection · Marbella</small></b>
-        </Link>
-        <nav>
-          <Link href="/villa-candela">Candela</Link>
-          <Link href="/villa-lampara">Lámpara</Link>
-          <Link href="/el-madronal">El Madroñal</Link>
-          <a className="enquire" href="#enquire">Enquire</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main>
         <section className="villaHero conciergeHero">
