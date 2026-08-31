@@ -5,3 +5,9 @@
 @media(max-width:850px){.desktopNav{display:none!important}.mobileNav{display:block;position:relative}.mobileNav summary{cursor:pointer;list-style:none;padding:12px;border:1px solid #ffffff80;font-size:10px;letter-spacing:.14em;text-transform:uppercase}.mobileNav summary::-webkit-details-marker{display:none}.mobileNav nav{position:absolute;right:0;top:51px;width:min(300px,calc(100vw - 32px));display:flex!important;flex-direction:column;align-items:stretch;gap:0!important;padding:16px;background:#11130f;color:#fff;box-shadow:0 16px 40px #0005}.mobileNav nav a{padding:15px;border-bottom:1px solid #ffffff20}.mobileNav nav .enquire{margin-top:10px;text-align:center}.discoverIntro,.discoverFeatureGrid,.whyGrid{grid-template-columns:1fr}.discoverIntro,.whyGrid{gap:50px}.discoverFeatureGrid img{height:480px}.discoverHero{min-height:680px}.discoverHero .heroCopy{padding-bottom:90px}}
 @media(max-width:560px){.destinationGrid{grid-template-columns:1fr}.destinationCard img{height:260px}.discoverFeatureGrid img{height:380px}.discoverHero{min-height:620px}.discoverHero h1{font-size:58px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.destinationCard,.destinationCard img,.gallery img{transition:none}}
+
+/* Official Madroñal Villas identity */
+.brand{gap:0}
+.brand img{display:block;width:auto;height:64px;mix-blend-mode:screen}
+.footerBrandLogo{display:block;width:auto;height:72px;margin-bottom:6px;mix-blend-mode:screen}
+@media(max-width:850px){.brand img{height:48px}.footerBrandLogo{height:62px}}
