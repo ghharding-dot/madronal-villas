@@ -65,4 +65,26 @@
     min-height: calc(100svh + 96px);
     height: auto;
   }
+
+  :global(.heroCopy h1) {
+    font-size: 54px;
+    line-height: 0.94;
+  }
+
+  :global(.heroCopy > p:not(.eyebrow)) {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 560px) {
+  :global(.heroCopy h1) {
+    font-size: 46px;
+    line-height: 0.96;
+  }
+
+  :global(.heroCopy > p:not(.eyebrow)) {
+    font-size: 16px;
+    line-height: 1.45;
+  }
 }
