@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SiteHeader from '../components/SiteHeader';
+import SiteFooter from '../components/SiteFooter';
 
 const distances = [
   ['Marbella', 'Approx. 15 minutes'],
@@ -108,14 +109,7 @@ export default function Page() {
         </section>
       </main>
 
-      <footer>
-        <div className="wrap footerGrid">
-          <div><strong>Madroñal Villas</strong><span>Private Collection · Marbella</span></div>
-          <div><strong>Residences</strong><Link href="/villa-candela">Villa Candela</Link><Link href="/villa-lampara">Villa Lámpara</Link></div>
-          <div><strong>Explore</strong><Link href="/el-madronal">El Madroñal</Link><Link href="/">Home</Link></div>
-          <div><strong>Contact</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a></div>
-        </div>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
