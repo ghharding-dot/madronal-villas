@@ -54,7 +54,7 @@ export default function Page() {
             <h1>Contemporary luxury.<em>Made for outdoor living.</em></h1>
             <p>A private seven-bedroom residence with a heated saltwater infinity pool, exceptional entertaining spaces and complete mountain seclusion.</p>
             <div className="actions">
-              <a className="btn gold" href="#enquire">Enquire about availability</a>
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Find an available villa</a>
               <a className="under" href="#gallery">Explore the villa</a>
             </div>
           </div>
@@ -167,19 +167,16 @@ export default function Page() {
         <section id="enquire" className="contact pad">
           <div className="wrap contactGrid">
             <div>
-              <p className="eyebrow">Private Enquiries</p>
-              <h2>Begin your stay.<em>At Villa Lámpara.</em></h2>
-              <p>Tell us your preferred dates, number of guests and any services you would like arranged. Every enquiry is handled personally and discreetly.</p>
-              <a href="mailto:reservations@madronalvillas.com">reservations@madronalvillas.com</a>
+              <p className="eyebrow">Current Availability</p>
+              <h2>Villa Lámpara is currently<em>off rental.</em></h2>
+              <p>Property Facilitators EuroAsia and The Luxury Villa Collection can prepare a bespoke selection of available luxury villas around your dates and requirements.</p>
             </div>
-            <form>
-              <label>Name<input type="text" name="name" /></label>
-              <label>Email<input type="email" name="email" /></label>
-              <label>Arrival<input type="date" name="arrival" /></label>
-              <label>Departure<input type="date" name="departure" /></label>
-              <label className="full">Message<textarea name="message" /></label>
-              <button className="btn gold full" type="submit">Send private enquiry</button>
-            </form>
+            <div>
+              <p>Share your preferred dates, group size, bedroom requirement, location and approximate budget to receive suitable alternatives.</p>
+              <div className="actions">
+                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Request available villas</a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -189,7 +186,7 @@ export default function Page() {
           <div><strong>Madroñal Villas</strong><span>Private Collection · Marbella</span></div>
           <div><strong>Residences</strong><Link href="/villa-candela">Villa Candela</Link><Link href="/villa-lampara">Villa Lámpara</Link></div>
           <div><strong>Explore</strong><Link href="/">Home</Link><a href="#gallery">Gallery</a></div>
-          <div><strong>Contact</strong><a href="mailto:reservations@madronalvillas.com">Reservations</a></div>
+          <div><strong>Contact</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a></div>
         </div>
       </footer>
     </>

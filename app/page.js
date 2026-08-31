@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import SiteHeader from './components/SiteHeader';
-import ReservationForm from './components/ReservationForm';
 
 const standards = [
   '1 Gbps fibre internet',
@@ -32,7 +31,7 @@ export default function HomePage() {
           </p>
           <div className="actions">
             <a className="btn gold" href="#villas">Explore the villas</a>
-            <a className="under" href="#contact">Begin your stay</a>
+            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Find an available villa</a>
           </div>
         </div>
       </section>
@@ -154,16 +153,25 @@ export default function HomePage() {
       <section id="contact" className="contact pad">
         <div className="wrap contactGrid">
           <div>
-            <p className="eyebrow">Reservations</p>
-            <h2>Begin your<em>stay.</em></h2>
+            <p className="eyebrow">Luxury Villa Rentals</p>
+            <h2>Our villas are currently<em>off rental.</em></h2>
             <p>
-              Tell us your preferred dates, group size and villa. We will reply
-              personally with availability and the next steps.
+              Villa Candela and Villa Lámpara are not presently accepting
+              reservations.
             </p>
-            <a href="mailto:reservations@madronalvillas.com">reservations@madronalvillas.com</a>
           </div>
-
-          <ReservationForm />
+          <div>
+            <p>
+              Property Facilitators EuroAsia works with The Luxury Villa
+              Collection to provide a bespoke selection of available luxury
+              villas across Marbella and the surrounding prime areas.
+            </p>
+            <div className="actions">
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
+                Request available villas
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -186,7 +194,7 @@ export default function HomePage() {
           </div>
           <div>
             <strong>Contact</strong>
-            <a href="mailto:reservations@madronalvillas.com">Email reservations</a>
+            <a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a>
           </div>
         </div>
       </footer>

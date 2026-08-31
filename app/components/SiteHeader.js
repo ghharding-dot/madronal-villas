@@ -6,7 +6,7 @@ function NavigationLinks() { return navigation.map(([label, href]) => <Link key=
 export default function SiteHeader() {
   return <header className="header">
     <Link className="brand" href="/" aria-label="Madroñal Villas home"><span aria-hidden="true">MV</span><b>Madroñal Villas<small>Private Collection · Marbella</small></b></Link>
-    <nav className="desktopNav" aria-label="Primary navigation"><NavigationLinks /><Link className="enquire" href="/#contact">Enquire</Link></nav>
-    <details className="mobileNav"><summary aria-label="Open navigation"><span>Menu</span></summary><nav aria-label="Mobile navigation"><NavigationLinks /><Link className="enquire" href="/#contact">Enquire</Link></nav></details>
+    <nav className="desktopNav" aria-label="Primary navigation"><NavigationLinks /><a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiry</a></nav>
+    <details className="mobileNav"><summary aria-label="Open navigation"><span>Menu</span></summary><nav aria-label="Mobile navigation"><NavigationLinks /><a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiry</a></nav></details>
   </header>;
 }

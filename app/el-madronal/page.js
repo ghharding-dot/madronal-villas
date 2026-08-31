@@ -113,7 +113,7 @@ export default function Page() {
           <div><strong>Madroñal Villas</strong><span>Private Collection · Marbella</span></div>
           <div><strong>Residences</strong><Link href="/villa-candela">Villa Candela</Link><Link href="/villa-lampara">Villa Lámpara</Link></div>
           <div><strong>Explore</strong><Link href="/el-madronal">El Madroñal</Link><Link href="/">Home</Link></div>
-          <div><strong>Contact</strong><a href="mailto:reservations@madronalvillas.com">Reservations</a></div>
+          <div><strong>Contact</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a></div>
         </div>
       </footer>
     </>

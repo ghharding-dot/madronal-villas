@@ -90,7 +90,7 @@ export default function ConciergePage() {
             <h2>Tell us what matters.<em>We will arrange the rest.</em></h2>
             <p>Share your dates, group profile and any services you are considering. We will confirm availability and provide a clear proposal before your arrival.</p>
             <div className="actions">
-              <a className="btn gold" href="#enquire">Request concierge services</a>
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Request villa and concierge options</a>
               <Link className="under" href="/">Return to the collection</Link>
             </div>
           </div>
@@ -99,26 +99,16 @@ export default function ConciergePage() {
         <section id="enquire" className="contact pad">
           <div className="wrap contactGrid">
             <div>
-              <p className="eyebrow">Concierge Enquiry</p>
-              <h2>Plan your<em>stay.</em></h2>
-              <p>Tell us which villa you are considering and the services you would like included.</p>
-              <a href="mailto:reservations@madronalvillas.com">reservations@madronalvillas.com</a>
+              <p className="eyebrow">Villa &amp; Concierge Enquiry</p>
+              <h2>Plan your<em>Marbella stay.</em></h2>
+              <p>Our villas are currently off rental. PF EuroAsia and The Luxury Villa Collection can arrange available villa alternatives together with the concierge services you require.</p>
             </div>
-            <form action="mailto:reservations@madronalvillas.com" method="post" encType="text/plain">
-              <label>Name<input name="name" required /></label>
-              <label>Email<input type="email" name="email" required /></label>
-              <label>Villa
-                <select name="villa" defaultValue="">
-                  <option value="" disabled>Select a villa</option>
-                  <option>Villa Candela</option>
-                  <option>Villa Lámpara</option>
-                  <option>Not yet decided</option>
-                </select>
-              </label>
-              <label>Arrival<input type="date" name="arrival" /></label>
-              <label className="full">Services required<textarea name="services" /></label>
-              <button className="btn gold full" type="submit">Send concierge enquiry</button>
-            </form>
+            <div>
+              <p>Use the PF EuroAsia rental enquiry form to share your dates, group size, preferred area and any additional services.</p>
+              <div className="actions">
+                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Open rental enquiry</a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -128,7 +118,7 @@ export default function ConciergePage() {
           <div><strong>Madroñal Villas</strong><span>Private Collection · Marbella</span></div>
           <div><strong>Residences</strong><Link href="/villa-candela">Villa Candela</Link><Link href="/villa-lampara">Villa Lámpara</Link></div>
           <div><strong>Explore</strong><Link href="/el-madronal">El Madroñal</Link><Link href="/concierge">Concierge</Link></div>
-          <div><strong>Contact</strong><a href="mailto:reservations@madronalvillas.com">Reservations</a></div>
+          <div><strong>Contact</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a></div>
         </div>
       </footer>
     </>
