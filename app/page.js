@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SiteHeader from './components/SiteHeader';
+import SiteFooter from './components/SiteFooter';
 
 const standards = [
   '1 Gbps fibre internet',
@@ -175,29 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer>
-        <div className="wrap footerGrid">
-          <div>
-            <strong>Madroñal Villas</strong>
-            <span>Private Collection · Marbella</span>
-            <span>Luxury. Privacy. Perfection.</span>
-          </div>
-          <div>
-            <strong>Villas</strong>
-            <Link href="/villa-candela">Villa Candela</Link>
-            <Link href="/villa-lampara">Villa Lámpara</Link>
-          </div>
-          <div>
-            <strong>Explore</strong>
-            <Link href="/el-madronal">El Madroñal Estate</Link>
-            <Link href="/concierge">Private Concierge</Link>
-          </div>
-          <div>
-            <strong>Contact</strong>
-            <a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
