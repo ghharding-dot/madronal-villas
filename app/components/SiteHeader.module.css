@@ -59,4 +59,10 @@
   .shiftedHeader {
     top: 52px !important;
   }
+
+  :global(.hero),
+  :global(.villaHero) {
+    min-height: calc(100svh + 96px);
+    height: auto;
+  }
 }
