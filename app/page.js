@@ -133,6 +133,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="collectionCta pad">
+        <div className="wrap collectionInner">
+          <p className="eyebrow darkEye">International Property &amp; Relocation</p>
+          <h2>From Marbella.<em>Across Europe &amp; Asia.</em></h2>
+          <p>
+            For guests considering buying property, relocating or exploring
+            opportunities beyond Spain, Property Facilitators EuroAsia connects
+            clients with trusted property, residency, legal and business
+            specialists across Europe and Asia.
+          </p>
+          <div className="actions">
+            <a className="btn gold" href="https://www.pfeuroasia.com/">
+              Explore PF EuroAsia
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="contact pad">
         <div className="wrap contactGrid">
           <div>
