@@ -11,3 +11,5 @@
 .brand img{display:block;width:auto;height:64px;mix-blend-mode:screen}
 .footerBrandLogo{display:block;width:auto;height:72px;margin-bottom:6px;mix-blend-mode:screen}
 @media(max-width:850px){.brand img{height:48px}.footerBrandLogo{height:62px}}
+.footerAddress{margin-top:4px;color:#ffffffaa;font-style:normal;line-height:1.65}
+.footerPhone{color:var(--gold2);font-weight:700;letter-spacing:.04em}
