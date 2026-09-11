@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import styles from './SiteHeader.module.css';
 
-const navigation = [['Villas', '/#villas'], ['Discover', '/discover'], ['El Madroñal', '/el-madronal'], ['Concierge', '/concierge']];
+const navigation = [
+  ['Villas', '/#villas'],
+  ['Discover', '/discover'],
+  ['El Madroñal', '/el-madronal'],
+  ['Local Knowledge', '/local-knowledge'],
+  ['Concierge', '/concierge']
+];
 function NavigationLinks() { return navigation.map(([label, href]) => <Link key={href} href={href}>{label}</Link>); }
 
 export default function SiteHeader() {

@@ -133,6 +133,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="localKnowledgeTeaser pad">
+        <div className="wrap localKnowledgeGrid">
+          <div>
+            <p className="eyebrow darkEye">Local Knowledge · Since 2010</p>
+            <h2>El Madroñal,<em>understood from within.</em></h2>
+          </div>
+          <div className="localKnowledgeCopy">
+            <p className="lead">
+              In El Madroñal, the details matter: which entrance suits a home,
+              how the orientation changes the light, where the most private
+              plots sit and what it takes to care for a substantial hillside
+              property throughout the year.
+            </p>
+            <p>
+              Our knowledge comes from more than a decade of managing homes,
+              welcoming guests and advising owners in the estate—not from a
+              map or a property listing.
+            </p>
+            <div className="knowledgePoints" aria-label="Areas of local knowledge">
+              <span>Estate access &amp; orientation</span>
+              <span>Villa ownership &amp; management</span>
+              <span>Rentals, buying &amp; selling</span>
+            </div>
+            <div className="actions">
+              <Link className="btn gold" href="/local-knowledge">Explore local knowledge</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="collectionCta pad">
         <div className="wrap collectionInner">
           <p className="eyebrow darkEye">International Property &amp; Relocation</p>

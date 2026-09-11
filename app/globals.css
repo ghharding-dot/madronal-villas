@@ -13,3 +13,38 @@
 @media(max-width:850px){.brand img{height:48px}.footerBrandLogo{height:62px}}
 .footerAddress{margin-top:4px;color:#ffffffaa;font-style:normal;line-height:1.65}
 .footerPhone{color:var(--gold2);font-weight:700;letter-spacing:.04em}
+
+/* Local knowledge */
+.localKnowledgeTeaser{background:var(--stone)}
+.localKnowledgeGrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:110px;align-items:start}
+.localKnowledgeCopy .lead{margin:0 0 26px}
+.localKnowledgeCopy>p:not(.lead){max-width:690px;color:#5f625b;line-height:1.85}
+.knowledgePoints{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:34px;background:#cfc7b8}
+.knowledgePoints span{padding:22px;background:var(--paper);color:#615a4e;font-size:12px;line-height:1.5}
+.knowledgeHero{background-image:url('/images/lampara/aerial.webp')}
+.knowledgeInsights{background:var(--paper)}
+.insightGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#d5cec0}
+.insightGrid article{min-height:330px;padding:48px;background:var(--paper)}
+.insightGrid article>span{color:var(--gold);font-size:11px;letter-spacing:.16em}
+.insightGrid h3{margin:28px 0 18px;font-size:40px}
+.insightGrid p{max-width:570px;margin:0;color:#64675f;line-height:1.85}
+.knowledgeFeatureImage{background-image:url('/images/candela/driveway.webp')}
+.geoffProfile{background:var(--stone)}
+.geoffProfileGrid{display:grid;grid-template-columns:.7fr 1.3fr;gap:110px;align-items:center}
+.profileMarker{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid #b9aa8c;background:var(--forest);color:#fff;text-align:center}
+.profileMarker span{color:var(--gold2);font:clamp(72px,10vw,150px)/1 Georgia,serif;letter-spacing:-.08em}
+.profileMarker small{margin-top:24px;color:#ffffff9e;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.profileCopy .lead{margin:34px 0 24px}
+.profileCopy>p:not(.eyebrow):not(.lead){max-width:760px;color:#5f625b;line-height:1.9}
+.profileActions{flex-wrap:wrap}
+.localGuideLinks{background:var(--forest);color:#fff}
+.localGuideLinks .heading>p{color:#ffffffa3}
+.guideLinkGrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #ffffff2c;border-left:1px solid #ffffff2c}
+.guideLinkGrid a{display:flex;min-height:110px;padding:28px;align-items:center;justify-content:space-between;border-right:1px solid #ffffff2c;border-bottom:1px solid #ffffff2c;transition:background .25s,color .25s}
+.guideLinkGrid a:hover{background:var(--gold);color:var(--ink)}
+.guideLinkGrid span{font:25px Georgia,serif}
+.guideLinkGrid b{color:var(--gold2);font-size:18px}
+.guideLinkGrid a:hover b{color:var(--ink)}
+@media(max-width:1050px){.localKnowledgeGrid,.geoffProfileGrid{gap:60px}.knowledgePoints{grid-template-columns:1fr}.guideLinkGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:850px){.localKnowledgeGrid,.geoffProfileGrid{grid-template-columns:1fr}.profileMarker{width:min(100%,480px)}.insightGrid{grid-template-columns:1fr}.knowledgeHeading{gap:40px}}
+@media(max-width:560px){.insightGrid article{min-height:0;padding:34px}.insightGrid h3{font-size:34px}.guideLinkGrid{grid-template-columns:1fr}.profileActions{align-items:stretch}.profileActions .under{text-align:center}}
