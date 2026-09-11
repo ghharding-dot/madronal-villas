@@ -7,6 +7,6 @@ export default function robots() {
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' }
     ],
-    sitemap: 'https://madronalvillas.com/sitemap.xml'
+    sitemap: 'https://www.madronalvillas.com/sitemap.xml'
   };
 }

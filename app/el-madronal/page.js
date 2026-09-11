@@ -17,10 +17,16 @@ const qualities = [
   ['Access', 'Marbella, Puerto Banús, beaches, restaurants and golf remain within easy reach.']
 ];
 
+export const metadata = {
+  title: 'El Madroñal, Marbella',
+  description: 'Discover El Madroñal, a secure and private residential estate in the hills above Marbella.',
+  alternates: { canonical: '/el-madronal', languages: { en: '/el-madronal', es: '/es/el-madronal', 'x-default': '/el-madronal' } }
+};
+
 export default function Page() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader languageHref="/es/el-madronal" />
 
       <main>
         <section className="villaHero estateHero">

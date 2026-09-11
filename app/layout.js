@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  metadataBase: new URL('https://madronalvillas.com'),
+  metadataBase: new URL('https://www.madronalvillas.com'),
   title: {
     default: 'Madroñal Villas | Private Luxury Villas in Marbella',
     template: '%s | Madroñal Villas'
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: 'Madroñal Villas — Private Collection',
     description: 'Two exceptional private villas within the exclusive gated estate of El Madroñal, Marbella.',
-    url: 'https://madronalvillas.com',
+    url: 'https://www.madronalvillas.com',
     siteName: 'Madroñal Villas',
     images: [
       {
@@ -49,9 +49,9 @@ export default function RootLayout({ children }) {
     '@graph': [
       {
         '@type': 'LodgingBusiness',
-        '@id': 'https://madronalvillas.com/#business',
+        '@id': 'https://www.madronalvillas.com/#business',
         name: 'Madroñal Villas',
-        url: 'https://madronalvillas.com/',
+        url: 'https://www.madronalvillas.com/',
         telephone: '+34 647 026 881',
         address: {
           '@type': 'PostalAddress',
@@ -60,16 +60,16 @@ export default function RootLayout({ children }) {
           addressCountry: 'ES'
         },
         areaServed: ['El Madroñal', 'Benahavís', 'Marbella', 'Costa del Sol'],
-        employee: { '@id': 'https://madronalvillas.com/local-knowledge#geoff-harding' },
+        employee: { '@id': 'https://www.madronalvillas.com/local-knowledge#geoff-harding' },
         sameAs: ['https://www.instagram.com/madronalvillasspain/']
       },
       {
         '@type': 'Person',
-        '@id': 'https://madronalvillas.com/local-knowledge#geoff-harding',
+        '@id': 'https://www.madronalvillas.com/local-knowledge#geoff-harding',
         name: 'Geoff Harding',
         jobTitle: 'Property adviser and villa manager',
         worksFor: [
-          { '@id': 'https://madronalvillas.com/#business' },
+          { '@id': 'https://www.madronalvillas.com/#business' },
           {
             '@type': 'RealEstateAgent',
             name: 'Property Facilitators Iberia',

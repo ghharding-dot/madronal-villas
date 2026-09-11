@@ -6,7 +6,7 @@ import { destinations } from './data';
 export default function DiscoverTemplate({ page }) {
   const index = destinations.findIndex((item) => item.slug === page.slug);
   const more = [1, 2, 3].map((offset) => destinations[(index + offset) % destinations.length]);
-  return <><SiteHeader /><main>
+  return <><SiteHeader languageHref={`/es/descubrir/${page.spanishSlug}`} /><main>
     <section className="discoverHero" style={{ backgroundImage: `url(${page.image})` }}><div className="shade" /><div className="wrap heroCopy"><p className="eyebrow">Discover El Madroñal · {page.eyebrow}</p><h1>{page.title}</h1><p>{page.intro}</p></div></section>
     <section className="intro pad"><div className="wrap discoverIntro"><p className="eyebrow darkEye">A Local Perspective</p><div><h2>Make the most of<em>every moment.</em></h2><p className="lead">Our guide to {page.title.toLowerCase()} is being carefully curated. Soon, this page will bring together personal recommendations and considered details for guests of Madroñal Villas.</p></div></div></section>
     <section className="discoverFeature pad"><div className="wrap discoverFeatureGrid"><img src={page.image} alt="" /><div><p className="eyebrow darkEye">The Guide</p><h2>Beautifully local.<em>Entirely your own.</em></h2><p>El Madroñal offers the rare pleasure of seclusion without isolation. Explore at your own pace, return to the privacy of your villa, and let our team arrange the details.</p><Link className="under" href="/concierge">Explore private concierge</Link></div></div></section>

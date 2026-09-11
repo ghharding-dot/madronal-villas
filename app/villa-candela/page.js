@@ -41,13 +41,14 @@ const outdoorFeatures = [
 
 export const metadata = {
   title: 'Villa Candela',
-  description: 'A ten-bedroom private villa with 36,000 m² of grounds, heated pool, Jacuzzi and resident staff in El Madroñal, Marbella.'
+  description: 'A ten-bedroom private villa with 36,000 m² of grounds, heated pool, Jacuzzi and resident staff in El Madroñal, Marbella.',
+  alternates: { canonical: '/villa-candela', languages: { en: '/villa-candela', es: '/es/villa-candela', 'x-default': '/villa-candela' } }
 };
 
 export default function Page() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader languageHref="/es/villa-candela" />
 
       <main>
         <section className="villaHero candelaHero">

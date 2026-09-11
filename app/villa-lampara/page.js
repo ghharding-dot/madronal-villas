@@ -42,10 +42,16 @@ const outdoorFeatures = [
   'Landscaped gardens and sun terraces'
 ];
 
+export const metadata = {
+  title: 'Villa Lámpara',
+  description: 'A private seven-bedroom villa with a heated saltwater infinity pool and exceptional outdoor living in El Madroñal, Marbella.',
+  alternates: { canonical: '/villa-lampara', languages: { en: '/villa-lampara', es: '/es/villa-lampara', 'x-default': '/villa-lampara' } }
+};
+
 export default function Page() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader languageHref="/es/villa-lampara" />
 
       <main>
         <section className="villaHero lamparaHero">

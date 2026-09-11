@@ -5,7 +5,7 @@ import SiteFooter from '../components/SiteFooter';
 export const metadata = {
   title: 'El Madroñal Local Knowledge | Geoff Harding',
   description: 'Practical local knowledge of El Madroñal from Geoff Harding, drawing on direct experience managing villas and advising owners in the estate since 2010.',
-  alternates: { canonical: '/local-knowledge' },
+  alternates: { canonical: '/local-knowledge', languages: { en: '/local-knowledge', es: '/es/conocimiento-local', 'x-default': '/local-knowledge' } },
   openGraph: {
     title: 'El Madroñal Local Knowledge | Madroñal Villas',
     description: 'An experienced, practical perspective on living, owning, renting and buying in El Madroñal above Marbella.',
@@ -51,10 +51,10 @@ export default function LocalKnowledgePage() {
     '@context': 'https://schema.org',
     '@type': 'ProfilePage',
     name: 'El Madroñal Local Knowledge',
-    url: 'https://madronalvillas.com/local-knowledge',
+    url: 'https://www.madronalvillas.com/local-knowledge',
     mainEntity: {
       '@type': 'Person',
-      '@id': 'https://madronalvillas.com/local-knowledge#geoff-harding',
+      '@id': 'https://www.madronalvillas.com/local-knowledge#geoff-harding',
       name: 'Geoff Harding',
       jobTitle: 'Property adviser and villa manager',
       description: 'Costa del Sol resident since 1984 and directly involved with private villas in El Madroñal since 2010.',
@@ -64,7 +64,7 @@ export default function LocalKnowledgePage() {
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader languageHref="/es/conocimiento-local" />
       <main>
         <script
           type="application/ld+json"

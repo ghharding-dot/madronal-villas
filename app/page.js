@@ -2,6 +2,10 @@ import Link from 'next/link';
 import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
 
+export const metadata = {
+  alternates: { canonical: '/', languages: { en: '/', es: '/es', 'x-default': '/' } }
+};
+
 const standards = [
   '1 Gbps fibre internet',
   'Wi-Fi 7 throughout',
@@ -16,7 +20,7 @@ const standards = [
 export default function HomePage() {
   return (
     <main>
-      <SiteHeader />
+      <SiteHeader languageHref="/es" />
 
       <section className="hero">
         <div className="shade" />

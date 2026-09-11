@@ -19,13 +19,14 @@ const services = [
 
 export const metadata = {
   title: 'Private Concierge',
-  description: 'Discreet concierge services for guests of Villa Candela and Villa Lámpara in El Madroñal, Marbella.'
+  description: 'Discreet concierge services for guests of Villa Candela and Villa Lámpara in El Madroñal, Marbella.',
+  alternates: { canonical: '/concierge', languages: { en: '/concierge', es: '/es/conserjeria', 'x-default': '/concierge' } }
 };
 
 export default function ConciergePage() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader languageHref="/es/conserjeria" />
 
       <main>
         <section className="villaHero conciergeHero">

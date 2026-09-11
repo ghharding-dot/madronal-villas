@@ -1,7 +1,7 @@
 import Link from 'next/link';
-export default function SiteFooter() { return <footer><div className="wrap footerGrid">
-  <div><img className="footerBrandLogo" src="/images/madronal-villas-logo-gold-black.webp" alt="Madroñal Villas" /><span>Private Collection · Marbella</span><address className="footerAddress">Urbanización El Madroñal<br />Benahavís, Málaga, Spain</address><a className="footerPhone" href="tel:+34647026881">+34 647 026 881</a></div>
-  <div><strong>Villas</strong><Link href="/villa-candela">Villa Candela</Link><Link href="/villa-lampara">Villa Lámpara</Link></div>
-  <div><strong>Explore</strong><Link href="/discover">Discover El Madroñal</Link><Link href="/local-knowledge">Local Knowledge</Link><Link href="/concierge">Private Concierge</Link></div>
-  <div><strong>Contact</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Rental enquiries</a><a href="https://www.instagram.com/madronalvillasspain/" target="_blank" rel="noopener noreferrer">Instagram @Madronalvillasspain</a></div>
+export default function SiteFooter({ locale = 'en' }) { const es = locale === 'es'; return <footer><div className="wrap footerGrid">
+  <div><img className="footerBrandLogo" src="/images/madronal-villas-logo-gold-black.webp" alt="Madroñal Villas" /><span>{es ? 'Colección privada · Marbella' : 'Private Collection · Marbella'}</span><address className="footerAddress">Urbanización El Madroñal<br />Benahavís, Málaga, {es ? 'España' : 'Spain'}</address><a className="footerPhone" href="tel:+34647026881">+34 647 026 881</a></div>
+  <div><strong>Villas</strong><Link href={es ? '/es/villa-candela' : '/villa-candela'}>Villa Candela</Link><Link href={es ? '/es/villa-lampara' : '/villa-lampara'}>Villa Lámpara</Link></div>
+  <div><strong>{es ? 'Descubrir' : 'Explore'}</strong><Link href={es ? '/es/descubrir' : '/discover'}>{es ? 'Descubrir El Madroñal' : 'Discover El Madroñal'}</Link><Link href={es ? '/es/conocimiento-local' : '/local-knowledge'}>{es ? 'Conocimiento local' : 'Local Knowledge'}</Link><Link href={es ? '/es/conserjeria' : '/concierge'}>{es ? 'Conserjería privada' : 'Private Concierge'}</Link></div>
+  <div><strong>{es ? 'Contacto' : 'Contact'}</strong><a href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{es ? 'Consultas de alquiler' : 'Rental enquiries'}</a><a href="https://www.instagram.com/madronalvillasspain/" target="_blank" rel="noopener noreferrer">Instagram @Madronalvillasspain</a></div>
 </div></footer>; }
