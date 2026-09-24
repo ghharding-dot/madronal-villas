@@ -58,7 +58,7 @@ export default function Page() {
             <h1>Generous space.<em>Complete privacy.</em></h1>
             <p>A substantial ten-bedroom Mediterranean estate created for extended families, private groups and relaxed outdoor living.</p>
             <div className="actions">
-              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Find an available villa</a>
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Find an available villa</a>
               <a className="under" href="#gallery">Explore the villa</a>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function Page() {
             <div>
               <p>Share your preferred dates, group size, bedroom requirement, location and approximate budget to receive suitable alternatives.</p>
               <div className="actions">
-                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Explore 100+ luxury villas</a>
+                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Explore 100+ luxury villas</a>
               </div>
             </div>
           </div>
