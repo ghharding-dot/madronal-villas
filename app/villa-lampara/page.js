@@ -176,12 +176,12 @@ export default function Page() {
             <div>
               <p className="eyebrow">Current Availability</p>
               <h2>Villa Lámpara is currently<em>off rental.</em></h2>
-              <p>Property Facilitators EuroAsia and The Luxury Villa Collection can prepare a bespoke selection of available luxury villas around your dates and requirements.</p>
+              <p>Looking for something similar? Property Facilitators EuroAsia and The Luxury Villa Collection provide access to more than 100 luxury villas across Marbella, Benahavís and the surrounding prime areas.</p>
             </div>
             <div>
               <p>Share your preferred dates, group size, bedroom requirement, location and approximate budget to receive suitable alternatives.</p>
               <div className="actions">
-                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Request available villas</a>
+                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Explore 100+ luxury villas</a>
               </div>
             </div>
           </div>
