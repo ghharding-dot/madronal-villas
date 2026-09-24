@@ -19,7 +19,7 @@ const qualities = [
 
 export const metadata = {
   title: 'El Madroñal, Marbella',
-  description: 'Discover El Madroñal, a secure and private residential estate in the hills above Marbella.',
+  description: 'A detailed guide to El Madroñal in Benahavís: privacy, gated security, villas, landscape, lifestyle and access to Marbella, Puerto Banús, golf and beaches.',
   alternates: { canonical: '/el-madronal', languages: { en: '/el-madronal', es: '/es/el-madronal', 'x-default': '/el-madronal' } }
 };
 
@@ -85,6 +85,34 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="pad editorial">
+          <div className="wrap editorialGrid">
+            <div>
+              <p className="eyebrow darkEye">Understanding El Madroñal</p>
+              <h2>An established estate.<em>With its own character.</em></h2>
+            </div>
+            <div className="copyColumns">
+              <p>El Madroñal is a long-established private residential community within the municipality of Benahavís, immediately above the Marbella coastline. Rather than a conventional resort, it is a collection of individually designed villas set along quiet hillside roads and mature woodland.</p>
+              <p>The estate is arranged around several controlled entrances. This matters in daily life: access, orientation and elevation vary across El Madroñal, and individual homes can feel remarkably different depending on their position, outlook and surrounding landscape.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="pad lifestyleSection">
+          <div className="wrap heading">
+            <div>
+              <p className="eyebrow darkEye">Life in El Madroñal</p>
+              <h2>Space, nature.<em>And Marbella within reach.</em></h2>
+            </div>
+            <p>The appeal is the combination: a genuinely private mountain setting without giving up the restaurants, beaches, golf, shopping and international connections of the coast.</p>
+          </div>
+          <div className="wrap lifestyleCards">
+            <article><span>01</span><h3>Marbella & Puerto Banús</h3><p>The coast is close enough for lunch, shopping, the marina or an evening out, while the return home quickly leaves the busier coastal atmosphere behind.</p></article>
+            <article><span>02</span><h3>Benahavís & Dining</h3><p>Benahavís and the wider Marbella area provide everything from traditional Andalusian restaurants to internationally recognised fine dining and private-chef services.</p></article>
+            <article><span>03</span><h3>Golf & Outdoors</h3><p>El Madroñal sits among some of the Costa del Sol's best-known golf territory, while the surrounding hills are equally suited to walking, cycling and time outdoors.</p></article>
+          </div>
+        </section>
+
         <section className="featureSplit reverseFeature">
           <div className="featureImage estateSecurityFeature" />
           <div className="featureCopy lightCopy">
@@ -99,6 +127,28 @@ export default function Page() {
               <span>Low-density residential setting</span>
               <span>Exceptional discretion</span>
             </div>
+          </div>
+        </section>
+
+        <section className="pad estateLocation">
+          <div className="wrap locationPanel">
+            <div>
+              <p className="eyebrow darkEye">For Guests & Residents</p>
+              <h2>Private living.<em>Practical every day.</em></h2>
+              <p className="lead locationLead">The setting feels secluded, but everyday requirements remain straightforward. Supermarkets, restaurants, schools, private healthcare, beach clubs and sporting facilities are all available in the wider Benahavís–Marbella area.</p>
+            </div>
+            <div className="serviceList compactList">
+              <span>International dining</span><span>Supermarkets & fresh food</span><span>Private healthcare</span><span>International schools</span><span>Golf & racquet sports</span><span>Beaches & beach clubs</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="pad collectionCta">
+          <div className="wrap collectionInner">
+            <p className="eyebrow darkEye">Luxury Villa Rentals</p>
+            <h2>Stay in Marbella.<em>Find the right villa.</em></h2>
+            <p>Villa Candela and Villa Lámpara are currently held privately. Through Property Facilitators EuroAsia and The Luxury Villa Collection, guests can explore more than 100 luxury rental villas across Marbella, Benahavís, El Madroñal and surrounding prime areas.</p>
+            <div className="actions"><a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Explore 100+ rental villas</a></div>
           </div>
         </section>
 
