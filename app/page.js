@@ -97,6 +97,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="rentalCollectionFeature">
+        <div className="rentalCollectionImage" role="img" aria-label="Luxury villa pool and terrace in Marbella" />
+        <div className="rentalCollectionCopy">
+          <p className="eyebrow">The Wider Rental Collection</p>
+          <h2>Looking for a luxury villa<em>in Marbella?</em></h2>
+          <p className="rentalLead">Villa Candela and Villa Lámpara are currently being held privately and are not accepting reservations.</p>
+          <p>Through Property Facilitators EuroAsia, in collaboration with The Luxury Villa Collection, we offer access to more than 100 exceptional rental villas across Marbella, Benahavís, El Madroñal, La Zagaleta, the Golden Mile and surrounding prime areas.</p>
+          <div className="rentalProof" aria-label="Rental collection highlights">
+            <strong>100+</strong><span>Luxury villas</span><i />
+            <strong>Marbella</strong><span>&amp; Costa del Sol</span>
+          </div>
+          <div className="actions">
+            <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Explore available villas</a>
+          </div>
+        </div>
+      </section>
+
       <section id="standards" className="services pad">
         <div className="wrap servicesGrid">
           <div className="serviceImg" />
@@ -198,12 +215,12 @@ export default function HomePage() {
           <div>
             <p>
               Property Facilitators EuroAsia works with The Luxury Villa
-              Collection to provide a bespoke selection of available luxury
+              Collection to provide access to more than 100 available luxury
               villas across Marbella and the surrounding prime areas.
             </p>
             <div className="actions">
               <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
-                Request available villas
+                Explore 100+ available villas
               </a>
             </div>
           </div>

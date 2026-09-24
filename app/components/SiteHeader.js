@@ -26,8 +26,8 @@ export default function SiteHeader({ locale = 'en', languageHref = locale === 'e
     <a className={styles.announcement} href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
       <span>{spanish ? 'Colección de alquiler' : 'Rental Collection'}</span>
       {spanish
-        ? 'Madroñal Villas, en colaboración con The Luxury Villa Collection — acceso a 80 villas excepcionales en alquiler en la Costa del Sol.'
-        : 'Madroñal Villas, in collaboration with The Luxury Villa Collection — access 80 exceptional villas for rent across the Costa del Sol.'}
+        ? 'Madroñal Villas, en colaboración con The Luxury Villa Collection — acceso a más de 100 villas excepcionales en alquiler en la Costa del Sol.'
+        : 'Madroñal Villas, in collaboration with The Luxury Villa Collection — access 100+ exceptional villas for rent across the Costa del Sol.'}
       <strong>{spanish ? 'Consultar disponibilidad →' : 'Explore availability →'}</strong>
     </a>
     <header className={`header ${styles.shiftedHeader}`}>
@@ -41,14 +41,14 @@ export default function SiteHeader({ locale = 'en', languageHref = locale === 'e
           <i aria-hidden="true">|</i>
           <Link href={spanish ? '#' : languageHref} aria-current={spanish ? 'page' : undefined}>ES</Link>
         </span>
-        <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Consulta de alquiler' : 'Rental enquiry'}</a>
+        <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
       </nav>
       <details className="mobileNav">
         <summary aria-label={spanish ? 'Abrir navegación' : 'Open navigation'}><span>{spanish ? 'Menú' : 'Menu'}</span></summary>
         <nav aria-label={spanish ? 'Navegación móvil' : 'Mobile navigation'}>
           <NavigationLinks locale={locale} />
           <span className={styles.mobileLanguages}><Link href={spanish ? languageHref : '#'}>English</Link><Link href={spanish ? '#' : languageHref}>Español</Link></span>
-          <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Consulta de alquiler' : 'Rental enquiry'}</a>
+          <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
         </nav>
       </details>
     </header>
