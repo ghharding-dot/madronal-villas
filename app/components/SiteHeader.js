@@ -23,7 +23,7 @@ function NavigationLinks({ locale }) {
 export default function SiteHeader({ locale = 'en', languageHref = locale === 'es' ? '/' : '/es' }) {
   const spanish = locale === 'es';
   return <>
-    <a className={styles.announcement} href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
+    <a className={styles.announcement} href="https://www.pfeuroasia.com/luxury-villa-rentals">
       <span>{spanish ? 'Colección de alquiler' : 'Rental Collection'}</span>
       {spanish
         ? 'Madroñal Villas, en colaboración con The Luxury Villa Collection — acceso a más de 100 villas excepcionales en alquiler en la Costa del Sol.'
@@ -41,14 +41,14 @@ export default function SiteHeader({ locale = 'en', languageHref = locale === 'e
           <i aria-hidden="true">|</i>
           <Link href={spanish ? '#' : languageHref} aria-current={spanish ? 'page' : undefined}>ES</Link>
         </span>
-        <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
+        <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
       </nav>
       <details className="mobileNav">
         <summary aria-label={spanish ? 'Abrir navegación' : 'Open navigation'}><span>{spanish ? 'Menú' : 'Menu'}</span></summary>
         <nav aria-label={spanish ? 'Navegación móvil' : 'Mobile navigation'}>
           <NavigationLinks locale={locale} />
           <span className={styles.mobileLanguages}><Link href={spanish ? languageHref : '#'}>English</Link><Link href={spanish ? '#' : languageHref}>Español</Link></span>
-          <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
+          <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
         </nav>
       </details>
     </header>
