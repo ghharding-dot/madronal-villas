@@ -36,7 +36,7 @@ export default function HomePage() {
           </p>
           <div className="actions">
             <a className="btn gold" href="#villas">Explore the villas</a>
-            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Find an available villa</a>
+            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals">Find an available villa</a>
           </div>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function HomePage() {
             <strong>Marbella</strong><span>&amp; Costa del Sol</span>
           </div>
           <div className="actions">
-            <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Explore available villas</a>
+            <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Explore available villas</a>
           </div>
         </div>
       </section>
@@ -219,7 +219,7 @@ export default function HomePage() {
               villas across Marbella and the surrounding prime areas.
             </p>
             <div className="actions">
-              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">
                 Explore 100+ available villas
               </a>
             </div>
