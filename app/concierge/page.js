@@ -92,7 +92,7 @@ export default function ConciergePage() {
             <h2>Tell us what matters.<em>We will arrange the rest.</em></h2>
             <p>Share your dates, group profile and any services you are considering. We will confirm availability and provide a clear proposal before your arrival.</p>
             <div className="actions">
-              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Request villa and concierge options</a>
+              <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Request villa and concierge options</a>
               <Link className="under" href="/">Return to the collection</Link>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function ConciergePage() {
             <div>
               <p>Use the PF EuroAsia rental enquiry form to share your dates, group size, preferred area and any additional services.</p>
               <div className="actions">
-                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Open rental enquiry</a>
+                <a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals">Open rental enquiry</a>
               </div>
             </div>
           </div>
