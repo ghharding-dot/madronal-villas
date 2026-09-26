@@ -2,9 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
+import RentalVillaCarousel from '../../components/RentalVillaCarousel';
 
 const enquiryHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas_es#villa-enquiry';
-const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas_es';
+const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas_es#villa-rentals-collection';
 
 const areas = [
   ['El Madroñal', 'Fincas privadas entre bosques maduros, a pocos minutos de Marbella y Puerto Banús.'],
@@ -54,15 +55,18 @@ export default function AlquilerVillasLujoPage() {
         </div>
       </section>
 
-      <section className="rentalHubStats" aria-label="Datos de la colección de alquiler"><div className="wrap rentalHubStatsGrid">
-        <div><strong>100+</strong><span>Villas de lujo</span></div><div><strong>6</strong><span>Zonas prime</span></div><div><strong>Privada</strong><span>Selección personalizada</span></div><div><strong>Completo</strong><span>Servicio de conserjería</span></div>
-      </div></section>
-
       <section className="intro pad"><div className="wrap split"><p className="eyebrow darkEye">La colección ampliada</p><div>
         <h2>Más opciones.<em>Seleccionadas personalmente.</em></h2>
         <p className="lead">Madroñal Villas ofrece acceso a más de 100 villas de lujo en alquiler a través de Property Facilitators EuroAsia, en colaboración con The Luxury Villa Collection.</p>
         <p className="rentalHubBody">Las villas publicadas representan solo una parte de la cartera. Indíquenos sus fechas, grupo, zona preferida, dormitorios y presupuesto aproximado, y prepararemos una selección actualizada para su estancia.</p>
+        <div className="actions"><a className="btn gold" href={collectionHref}>Ver la selección actual de villas</a><a className="under darkUnder" href={enquiryHref}>Enviar sus requisitos</a></div>
       </div></div></section>
+
+      <RentalVillaCarousel locale="es" />
+
+      <section className="rentalHubStats" aria-label="Datos de la colección de alquiler"><div className="wrap rentalHubStatsGrid">
+        <div><strong>100+</strong><span>Villas de lujo</span></div><div><strong>6</strong><span>Zonas prime</span></div><div><strong>Privada</strong><span>Selección personalizada</span></div><div><strong>Completo</strong><span>Servicio de conserjería</span></div>
+      </div></section>
 
       <section className="pad rentalHubAreas"><div className="wrap">
         <div className="heading"><div><p className="eyebrow darkEye">A lo largo de la costa</p><h2>Direcciones prime.<em>Estancias singulares.</em></h2></div><p>Desde fincas privadas en la montaña hasta residencias junto al mar, la colección cubre las zonas más solicitadas de Marbella y destinos seleccionados de la Costa del Sol.</p></div>

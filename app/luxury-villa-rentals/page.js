@@ -2,9 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
+import RentalVillaCarousel from '../components/RentalVillaCarousel';
 
 const enquiryHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas#villa-enquiry';
-const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas';
+const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas#villa-rentals-collection';
 
 const areas = [
   ['El Madroñal', 'Private hillside estates surrounded by mature woodland, minutes from Marbella and Puerto Banús.'],
@@ -72,15 +73,18 @@ export default function LuxuryVillaRentalsPage() {
         </div>
       </section>
 
-      <section className="rentalHubStats" aria-label="Rental collection highlights"><div className="wrap rentalHubStatsGrid">
-        <div><strong>100+</strong><span>Luxury villas</span></div><div><strong>6</strong><span>Prime rental areas</span></div><div><strong>Private</strong><span>Tailored shortlist</span></div><div><strong>Complete</strong><span>Concierge support</span></div>
-      </div></section>
-
       <section className="intro pad"><div className="wrap split"><p className="eyebrow darkEye">The Wider Collection</p><div>
         <h2>More choice.<em>Personally selected.</em></h2>
         <p className="lead">Madroñal Villas provides access to more than 100 luxury rental villas through Property Facilitators EuroAsia, in collaboration with The Luxury Villa Collection.</p>
         <p className="rentalHubBody">The villas shown publicly represent only part of the available portfolio. Tell us your dates, group size, preferred area, bedroom requirement and approximate budget, and a current selection will be prepared specifically for your stay.</p>
+        <div className="actions"><a className="btn gold" href={collectionHref}>View the current villa selection</a><a className="under darkUnder" href={enquiryHref}>Send your requirements</a></div>
       </div></div></section>
+
+      <RentalVillaCarousel />
+
+      <section className="rentalHubStats" aria-label="Rental collection highlights"><div className="wrap rentalHubStatsGrid">
+        <div><strong>100+</strong><span>Luxury villas</span></div><div><strong>6</strong><span>Prime rental areas</span></div><div><strong>Private</strong><span>Tailored shortlist</span></div><div><strong>Complete</strong><span>Concierge support</span></div>
+      </div></section>
 
       <section className="pad rentalHubAreas"><div className="wrap">
         <div className="heading"><div><p className="eyebrow darkEye">Across the Coast</p><h2>Prime addresses.<em>Distinctive stays.</em></h2></div><p>From private mountain estates to beachside homes, the collection covers Marbella’s most requested locations and selected destinations along the Costa del Sol.</p></div>
