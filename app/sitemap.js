@@ -19,6 +19,7 @@ export default function sitemap() {
     '/discover/day-trips',
     '/discover/services',
     '/concierge',
+    '/luxury-villa-rentals',
     '/es',
     '/es/villa-candela',
     '/es/villa-lampara',
@@ -36,12 +37,13 @@ export default function sitemap() {
     '/es/descubrir/bienestar',
     '/es/descubrir/excursiones',
     '/es/descubrir/servicios',
-    '/es/conserjeria'
+    '/es/conserjeria',
+    '/es/alquiler-villas-lujo'
   ];
 
   return routes.map((route) => ({
     url: `${base}${route}`,
     changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1 : route === '/local-knowledge' || route === '/el-madronal' ? 0.9 : 0.7
+    priority: route === '' ? 1 : route === '/luxury-villa-rentals' || route === '/es/alquiler-villas-lujo' ? 0.95 : route === '/local-knowledge' || route === '/el-madronal' ? 0.9 : 0.7
   }));
 }

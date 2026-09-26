@@ -3,6 +3,7 @@ import styles from './SiteHeader.module.css';
 
 const englishNavigation = [
   ['Villas', '/#villas'],
+  ['Rentals 100+', '/luxury-villa-rentals'],
   ['Discover', '/discover'],
   ['El Madroñal', '/el-madronal'],
   ['Local Knowledge', '/local-knowledge'],
@@ -10,6 +11,7 @@ const englishNavigation = [
 ];
 const spanishNavigation = [
   ['Villas', '/es/#villas'],
+  ['Alquileres 100+', '/es/alquiler-villas-lujo'],
   ['Descubrir', '/es/descubrir'],
   ['El Madroñal', '/es/el-madronal'],
   ['Conocimiento local', '/es/conocimiento-local'],
@@ -23,13 +25,13 @@ function NavigationLinks({ locale }) {
 export default function SiteHeader({ locale = 'en', languageHref = locale === 'es' ? '/' : '/es' }) {
   const spanish = locale === 'es';
   return <>
-    <a className={styles.announcement} href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">
+    <Link className={styles.announcement} href={spanish ? '/es/alquiler-villas-lujo' : '/luxury-villa-rentals'}>
       <span>{spanish ? 'Colección de alquiler' : 'Rental Collection'}</span>
       {spanish
         ? 'Madroñal Villas, en colaboración con The Luxury Villa Collection — acceso a más de 100 villas excepcionales en alquiler en la Costa del Sol.'
         : 'Madroñal Villas, in collaboration with The Luxury Villa Collection — access 100+ exceptional villas for rent across the Costa del Sol.'}
-      <strong>{spanish ? 'Consultar disponibilidad →' : 'Explore availability →'}</strong>
-    </a>
+      <strong>{spanish ? 'Descubrir la colección →' : 'Discover the collection →'}</strong>
+    </Link>
     <header className={`header ${styles.shiftedHeader}`}>
       <Link className="brand" href={spanish ? '/es' : '/'} aria-label={spanish ? 'Inicio de Madroñal Villas' : 'Madroñal Villas home'}>
         <img src="/images/madronal-villas-logo-gold-black.webp" alt="Madroñal Villas" />
@@ -41,14 +43,14 @@ export default function SiteHeader({ locale = 'en', languageHref = locale === 'e
           <i aria-hidden="true">|</i>
           <Link href={spanish ? '#' : languageHref} aria-current={spanish ? 'page' : undefined}>ES</Link>
         </span>
-        <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
+        <Link className="enquire" href={spanish ? '/es/alquiler-villas-lujo' : '/luxury-villa-rentals'}>{spanish ? 'Encontrar una villa' : 'Find a villa'}</Link>
       </nav>
       <details className="mobileNav">
         <summary aria-label={spanish ? 'Abrir navegación' : 'Open navigation'}><span>{spanish ? 'Menú' : 'Menu'}</span></summary>
         <nav aria-label={spanish ? 'Navegación móvil' : 'Mobile navigation'}>
           <NavigationLinks locale={locale} />
           <span className={styles.mobileLanguages}><Link href={spanish ? languageHref : '#'}>English</Link><Link href={spanish ? '#' : languageHref}>Español</Link></span>
-          <a className="enquire" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">{spanish ? 'Encontrar una villa' : 'Find a villa'}</a>
+          <Link className="enquire" href={spanish ? '/es/alquiler-villas-lujo' : '/luxury-villa-rentals'}>{spanish ? 'Encontrar una villa' : 'Find a villa'}</Link>
         </nav>
       </details>
     </header>

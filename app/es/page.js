@@ -22,8 +22,20 @@ export default function Inicio() {
       <p className="eyebrow">Madroñal Villas · Colección privada</p>
       <h1>Lujo. Privacidad.<em>Perfección.</em></h1>
       <p>Dos villas privadas excepcionales en la exclusiva urbanización cerrada de El Madroñal, Marbella.</p>
-      <div className="actions"><a className="btn gold" href="#villas">Descubrir las villas</a><a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Encontrar una villa disponible</a></div>
+      <div className="actions"><a className="btn gold" href="#villas">Descubrir las villas</a><Link className="under" href="/es/alquiler-villas-lujo">Explorar más de 100 villas disponibles</Link></div>
     </div></section>
+
+    <section className="rentalCollectionFeature">
+      <div className="rentalCollectionImage" role="img" aria-label="Piscina y terraza de una villa de lujo en Marbella" />
+      <div className="rentalCollectionCopy">
+        <p className="eyebrow">La colección ampliada de alquiler</p>
+        <h2>¿Busca una villa de lujo?<em>Tenemos más de 100 opciones.</em></h2>
+        <p className="rentalLead">Villa Candela y Villa Lámpara se mantienen actualmente como residencias privadas y no aceptan reservas.</p>
+        <p>A través de Property Facilitators EuroAsia, en colaboración con The Luxury Villa Collection, ofrecemos acceso a más de 100 villas excepcionales en Marbella, Benahavís, El Madroñal, La Zagaleta, la Milla de Oro y otras zonas prime de la Costa del Sol.</p>
+        <div className="rentalProof" aria-label="Datos de la colección de alquiler"><strong>100+</strong><span>Villas de lujo</span><i /><strong>Marbella</strong><span>y Costa del Sol</span></div>
+        <div className="actions"><Link className="btn gold" href="/es/alquiler-villas-lujo">Descubrir la colección</Link></div>
+      </div>
+    </section>
 
     <section className="intro pad"><div className="wrap split"><p className="eyebrow darkEye">La colección</p><div>
       <h2>Dos villas excepcionales.<em>Una urbanización extraordinaria.</em></h2>
@@ -61,7 +73,7 @@ export default function Inicio() {
 
     <section className="collectionCta pad"><div className="wrap collectionInner"><p className="eyebrow darkEye">Propiedad internacional y traslado</p><h2>Desde Marbella.<em>Por Europa y Asia.</em></h2><p>Para quienes contemplan comprar una propiedad, trasladarse o explorar oportunidades fuera de España, Property Facilitators EuroAsia conecta a sus clientes con especialistas de confianza en propiedad, residencia, asuntos legales y negocios en Europa y Asia.</p><div className="actions"><a className="btn gold" href="https://www.pfeuroasia.com/">Descubrir PF EuroAsia</a></div></div></section>
 
-    <section id="contact" className="contact pad"><div className="wrap contactGrid"><div><p className="eyebrow">Alquiler de villas de lujo</p><h2>Nuestras villas no están<em>actualmente en alquiler.</em></h2><p>Villa Candela y Villa Lámpara no aceptan reservas en este momento.</p></div><div><p>Property Facilitators EuroAsia colabora con The Luxury Villa Collection para ofrecer una selección personalizada de villas de lujo disponibles en Marbella y sus zonas prime.</p><div className="actions"><a className="btn gold" href="https://www.pfeuroasia.com/luxury-villa-rentals#villa-enquiry">Solicitar villas disponibles</a></div></div></div></section>
+    <section id="contact" className="contact pad"><div className="wrap contactGrid"><div><p className="eyebrow">Alquiler de villas de lujo</p><h2>Nuestras villas no están<em>actualmente en alquiler.</em></h2><p>Villa Candela y Villa Lámpara no aceptan reservas en este momento.</p></div><div><p>Property Facilitators EuroAsia colabora con The Luxury Villa Collection para ofrecer acceso a más de 100 villas de lujo disponibles en Marbella y sus zonas prime.</p><div className="actions"><Link className="btn gold" href="/es/alquiler-villas-lujo">Explorar más de 100 villas</Link></div></div></div></section>
     <SiteFooter locale="es" />
   </main>;
 }
