@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 315" role="img" aria-label="Madroñal Villas">
+  <defs>
+    <filter id="alpha" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="luminanceToAlpha" result="mask"/>
+      <feComponentTransfer in="mask" result="boost">
+        <feFuncA type="gamma" amplitude="1.45" exponent="0.65" offset="-0.08"/>
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" in2="boost" operator="in"/>
+    </filter>
+  </defs>
+  <image href="/images/madronal-villas-logo-gold-black.webp" width="1200" height="315" preserveAspectRatio="xMidYMid meet" filter="url(#alpha)"/>
+</svg>
