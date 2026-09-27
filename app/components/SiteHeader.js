@@ -34,7 +34,7 @@ export default function SiteHeader({ locale = 'en', languageHref = locale === 'e
     </Link>
     <header className={`header ${styles.shiftedHeader}`}>
       <Link className="brand" href={spanish ? '/es' : '/'} aria-label={spanish ? 'Inicio de Madroñal Villas' : 'Madroñal Villas home'}>
-        <img src="/images/madronal-villas-logo-gold-black.webp" alt="Madroñal Villas" />
+        <img src="/images/madronal-villas-logo-gold-transparent.svg" alt="Madroñal Villas" />
       </Link>
       <nav className="desktopNav" aria-label={spanish ? 'Navegación principal' : 'Primary navigation'}>
         <NavigationLinks locale={locale} />
