@@ -25,32 +25,49 @@ export default function HomePage() {
       <section className="hero">
         <div className="shade" />
         <div className="wrap heroCopy">
-          <p className="eyebrow">Madroñal Villas · Private Collection</p>
+          <p className="eyebrow">Madroñal Villas · 100+ Luxury Villa Rentals</p>
           <h1>
-            Luxury. Privacy.
-            <em>Perfection.</em>
+            Luxury villas to rent.<em>Marbella &amp; Costa del Sol.</em>
           </h1>
           <p>
-            Two exceptional private villas within the exclusive gated estate of
-            El Madroñal, Marbella.
+            Access more than 100 luxury rental villas across Marbella, Benahavís,
+            El Madroñal and the Costa del Sol. Share your dates and requirements
+            for a personally selected shortlist.
           </p>
           <div className="actions">
-            <a className="btn gold" href="#villas">Explore the villas</a>
-            <Link className="under" href="/luxury-villa-rentals">Explore 100+ available villas</Link>
+            <Link className="btn gold" href="/luxury-villa-rentals">Explore 100+ rental villas</Link>
+            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals#villa-enquiry">Request your villa shortlist</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="rentalCollectionFeature">
+        <div className="rentalCollectionImage" role="img" aria-label="Luxury villa pool and terrace in Marbella" />
+        <div className="rentalCollectionCopy">
+          <p className="eyebrow">100+ Luxury Villas · Marbella &amp; Costa del Sol</p>
+          <h2>Your Marbella villa rental.<em>More than 100 possibilities.</em></h2>
+          <p className="rentalLead">Tell us your dates, guests, preferred location and budget. We will help you find the right villa from the wider collection, with availability confirmed for your stay.</p>
+          <p>Through Property Facilitators EuroAsia, in collaboration with The Luxury Villa Collection, we offer access to more than 100 exceptional rental villas across Marbella, Benahavís, El Madroñal, La Zagaleta, the Golden Mile and surrounding prime areas.</p>
+          <div className="rentalProof" aria-label="Rental collection highlights">
+            <strong>100+</strong><span>Luxury villas</span><i />
+            <strong>Marbella</strong><span>&amp; Costa del Sol</span>
+          </div>
+          <div className="actions">
+            <Link className="btn gold" href="/luxury-villa-rentals">Discover the 100+ villa collection</Link>
           </div>
         </div>
       </section>
 
       <section className="intro pad">
         <div className="wrap split">
-          <p className="eyebrow darkEye">The Collection</p>
+          <p className="eyebrow darkEye">Our El Madroñal Heritage</p>
           <div>
-            <h2>Two Exceptional Villas.<em>One Extraordinary Estate.</em></h2>
+            <h2>Local experience.<em>A wider villa collection.</em></h2>
             <p className="lead">
-              Hidden within the prestigious gated estate of El Madroñal, Villa
-              Candela and Villa Lámpara combine privacy, generous living spaces
-              and discreet professional service, only minutes from Marbella and
-              Puerto Banús.
+              Our experience managing Villa Candela and Villa Lámpara in El Madroñal
+              informs our personal approach to finding the right Marbella villa.
+              Both homes are currently private and not accepting rental reservations;
+              enquiries are welcome for the wider collection of more than 100 villas.
             </p>
           </div>
         </div>
@@ -60,12 +77,13 @@ export default function HomePage() {
         <div className="wrap">
           <div className="heading">
             <div>
-              <p className="eyebrow darkEye">Our Villas</p>
-              <h2>Choose your<em>private retreat.</em></h2>
+              <p className="eyebrow darkEye">Our Private Residences · Off Rental</p>
+              <h2>Discover our<em>El Madroñal residences.</em></h2>
             </div>
             <p>
-              Each residence has its own character, extensive private grounds,
-              heated pool and dedicated staff support throughout your stay.
+              Villa Candela and Villa Lámpara are currently private residences
+              and are not accepting reservations. Explore their character and
+              the estate behind our local experience.
             </p>
           </div>
 
@@ -97,23 +115,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="rentalCollectionFeature">
-        <div className="rentalCollectionImage" role="img" aria-label="Luxury villa pool and terrace in Marbella" />
-        <div className="rentalCollectionCopy">
-          <p className="eyebrow">The Wider Rental Collection</p>
-          <h2>Looking for a luxury villa<em>in Marbella?</em></h2>
-          <p className="rentalLead">Villa Candela and Villa Lámpara are currently being held privately and are not accepting reservations.</p>
-          <p>Through Property Facilitators EuroAsia, in collaboration with The Luxury Villa Collection, we offer access to more than 100 exceptional rental villas across Marbella, Benahavís, El Madroñal, La Zagaleta, the Golden Mile and surrounding prime areas.</p>
-          <div className="rentalProof" aria-label="Rental collection highlights">
-            <strong>100+</strong><span>Luxury villas</span><i />
-            <strong>Marbella</strong><span>&amp; Costa del Sol</span>
-          </div>
-          <div className="actions">
-            <Link className="btn gold" href="/luxury-villa-rentals">Discover the 100+ villa collection</Link>
-          </div>
-        </div>
-      </section>
-
       <section id="standards" className="services pad">
         <div className="wrap servicesGrid">
           <div className="serviceImg" />
@@ -121,8 +122,9 @@ export default function HomePage() {
             <p className="eyebrow darkEye">The Madroñal Standard</p>
             <h2>Comfort without<em>compromise.</em></h2>
             <p className="lead">
-              Every stay is professionally managed, with strong connectivity,
-              quality amenities and discreet on-site support.
+              Our experience at Candela and Lámpara was built around these standards.
+              Facilities and services in the wider rental collection vary by villa
+              and will be confirmed with your shortlist.
             </p>
             <div className="serviceList">
               {standards.map((item) => <span key={item}>{item}</span>)}
@@ -206,10 +208,10 @@ export default function HomePage() {
         <div className="wrap contactGrid">
           <div>
             <p className="eyebrow">Luxury Villa Rentals</p>
-            <h2>Our villas are currently<em>off rental.</em></h2>
+            <h2>Find your Marbella villa.<em>100+ options to explore.</em></h2>
             <p>
-              Villa Candela and Villa Lámpara are not presently accepting
-              reservations.
+              Send your dates, guest numbers, bedrooms and budget for a tailored
+              selection of luxury villas in Marbella and the Costa del Sol.
             </p>
           </div>
           <div>

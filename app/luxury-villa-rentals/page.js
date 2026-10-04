@@ -67,7 +67,7 @@ export default function LuxuryVillaRentalsPage() {
         <div className="rentalHubShade" />
         <div className="wrap heroCopy rentalHubHeroCopy">
           <p className="eyebrow">Luxury Villa Rentals &amp; Concierge</p>
-          <h1>100+ exceptional villas.<em>One private enquiry.</em></h1>
+          <h1>100+ luxury villas to rent.<em>Marbella &amp; Costa del Sol.</em></h1>
           <p>Access a carefully selected portfolio across Marbella, Benahavís and the Costa del Sol—many available only through private enquiry.</p>
           <div className="actions"><a className="btn gold" href={enquiryHref}>Send your requirements</a><a className="under" href={collectionHref}>View the current selection</a></div>
         </div>

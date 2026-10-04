@@ -49,7 +49,7 @@ export default function AlquilerVillasLujoPage() {
         <div className="rentalHubShade" />
         <div className="wrap heroCopy rentalHubHeroCopy">
           <p className="eyebrow">Alquiler de Villas de Lujo y Conserjería</p>
-          <h1>Más de 100 villas excepcionales.<em>Una consulta privada.</em></h1>
+          <h1>Más de 100 villas de lujo en alquiler.<em>Marbella y Costa del Sol.</em></h1>
           <p>Acceda a una cuidada cartera en Marbella, Benahavís y la Costa del Sol, con numerosas villas disponibles únicamente mediante consulta privada.</p>
           <div className="actions"><a className="btn gold" href={enquiryHref}>Enviar sus requisitos</a><a className="under" href={collectionHref}>Ver la selección actual</a></div>
         </div>

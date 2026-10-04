@@ -2,16 +2,16 @@ import Link from 'next/link';
 import styles from './SiteHeader.module.css';
 
 const englishNavigation = [
-  ['Villas', '/#villas'],
   ['Rentals 100+', '/luxury-villa-rentals'],
+  ['Private Villas', '/#villas'],
   ['Discover', '/discover'],
   ['El Madroñal', '/el-madronal'],
   ['Local Knowledge', '/local-knowledge'],
   ['Concierge', '/concierge']
 ];
 const spanishNavigation = [
-  ['Villas', '/es/#villas'],
   ['Alquileres 100+', '/es/alquiler-villas-lujo'],
+  ['Villas privadas', '/es/#villas'],
   ['Descubrir', '/es/descubrir'],
   ['El Madroñal', '/es/el-madronal'],
   ['Conocimiento local', '/es/conocimiento-local'],

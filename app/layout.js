@@ -4,12 +4,14 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.madronalvillas.com'),
   title: {
-    default: 'Madroñal Villas | Private Luxury Villas in Marbella',
+    default: '100+ Luxury Villa Rentals Marbella | Madroñal Villas',
     template: '%s | Madroñal Villas'
   },
-  description: 'Villa Candela and Villa Lámpara: two privately operated luxury villas in the gated El Madroñal estate near Marbella and Puerto Banús.',
+  description: 'Access 100+ luxury villas to rent in Marbella, El Madroñal, Benahavís and the Costa del Sol through PF EuroAsia and The Luxury Villa Collection.',
   keywords: [
-    'luxury villas Marbella',
+    'luxury villa rentals Marbella',
+    'Costa del Sol villa rentals',
+    'Benahavís villa rentals',
     'El Madroñal villa rental',
     'private villa Marbella',
     'Villa Candela',
@@ -17,8 +19,8 @@ export const metadata = {
     'luxury accommodation Benahavís'
   ],
   openGraph: {
-    title: 'Madroñal Villas — Private Collection',
-    description: 'Two exceptional private villas within the exclusive gated estate of El Madroñal, Marbella.',
+    title: 'Madroñal Villas — 100+ Luxury Villa Rentals',
+    description: 'Access more than 100 luxury rental villas across Marbella and the Costa del Sol. Send your dates and requirements for a tailored selection.',
     url: 'https://www.madronalvillas.com',
     siteName: 'Madroñal Villas',
     images: [
@@ -34,8 +36,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Madroñal Villas — Private Collection',
-    description: 'Luxury. Privacy. Perfection.',
+    title: 'Madroñal Villas — 100+ Luxury Villa Rentals',
+    description: '100+ luxury villas to rent in Marbella and the Costa del Sol. A personal selection for your stay.',
     images: ['/images/lampara/aerial.webp']
   },
   robots: {
@@ -60,7 +62,8 @@ export default function RootLayout({ children }) {
           addressRegion: 'Málaga',
           addressCountry: 'ES'
         },
-        areaServed: ['El Madroñal', 'Benahavís', 'Marbella', 'Costa del Sol'],
+        areaServed: ['El Madroñal', 'La Zagaleta', 'Benahavís', 'Marbella', 'Costa del Sol'],
+        description: 'Local villa management expertise and access to more than 100 luxury rental villas through Property Facilitators EuroAsia, in collaboration with The Luxury Villa Collection.',
         employee: { '@id': 'https://www.madronalvillas.com/local-knowledge#geoff-harding' },
         sameAs: ['https://www.instagram.com/madronalvillasspain/']
       },
