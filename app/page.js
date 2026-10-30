@@ -2,6 +2,7 @@ import Link from 'next/link';
 import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
 import GeneralVillaEnquiry from './components/GeneralVillaEnquiry';
+import RentalVillaCarousel from './components/RentalVillaCarousel';
 
 export const metadata = {
   alternates: { canonical: '/', languages: { en: '/', es: '/es', 'x-default': '/' } }
@@ -41,6 +42,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <RentalVillaCarousel />
+
+
 
       <section className="rentalCollectionFeature">
         <div className="rentalCollectionImage" role="img" aria-label="Luxury villa pool and terrace in Marbella" />
