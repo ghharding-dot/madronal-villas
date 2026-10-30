@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
 import RentalVillaCarousel from '../../components/RentalVillaCarousel';
+import GeneralVillaEnquiry from '../../components/GeneralVillaEnquiry';
 
 const enquiryHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas_es#villa-enquiry';
 const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas_es#villa-rentals-collection';
@@ -51,7 +52,7 @@ export default function AlquilerVillasLujoPage() {
           <p className="eyebrow">Alquiler de Villas de Lujo y Conserjería</p>
           <h1>Más de 100 villas de lujo en alquiler.<em>Marbella y Costa del Sol.</em></h1>
           <p>Acceda a una cuidada cartera en Marbella, Benahavís y la Costa del Sol, con numerosas villas disponibles únicamente mediante consulta privada.</p>
-          <div className="actions"><a className="btn gold" href={enquiryHref}>Enviar sus requisitos</a><a className="under" href={collectionHref}>Ver la selección actual</a></div>
+          <div className="actions"><a className="btn gold" href={enquiryHref}>Consulta general — indique sus fechas</a><a className="under" href={collectionHref}>Ver la selección actual</a></div>
         </div>
       </section>
 
@@ -63,6 +64,8 @@ export default function AlquilerVillasLujoPage() {
       </div></div></section>
 
       <RentalVillaCarousel locale="es" />
+
+      <GeneralVillaEnquiry locale="es" />
 
       <section className="rentalHubStats" aria-label="Datos de la colección de alquiler"><div className="wrap rentalHubStatsGrid">
         <div><strong>100+</strong><span>Villas de lujo</span></div><div><strong>6</strong><span>Zonas prime</span></div><div><strong>Privada</strong><span>Selección personalizada</span></div><div><strong>Completo</strong><span>Servicio de conserjería</span></div>
