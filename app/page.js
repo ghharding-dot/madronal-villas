@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
+import GeneralVillaEnquiry from './components/GeneralVillaEnquiry';
 
 export const metadata = {
   alternates: { canonical: '/', languages: { en: '/', es: '/es', 'x-default': '/' } }
@@ -36,7 +37,7 @@ export default function HomePage() {
           </p>
           <div className="actions">
             <Link className="btn gold" href="/luxury-villa-rentals">Explore 100+ rental villas</Link>
-            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals#villa-enquiry">Request your villa shortlist</a>
+            <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals#villa-enquiry">General villa enquiry — send your dates</a>
           </div>
         </div>
       </section>
@@ -57,6 +58,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GeneralVillaEnquiry />
 
       <section className="intro pad">
         <div className="wrap split">
