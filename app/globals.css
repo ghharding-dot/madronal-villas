@@ -77,18 +77,52 @@
 @media(max-width:850px){.generalVillaEnquiry{padding:56px 0}.generalVillaEnquiryInner{grid-template-columns:1fr;gap:26px}.generalVillaEnquiryCopy h2{font-size:clamp(36px,7vw,50px)}}
 
 
-/* Two-photo editorial composition for the shared rental carousel. */
-.rentalPreviewGallery{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;min-height:650px}
-.rentalPreviewGalleryPair{grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);gap:10px}
-.rentalPreviewGallery .rentalPreviewImage{min-height:650px}
+/* Landscape gallery for rental villa previews: two 16:9 images on desktop. */
+.rentalPreviewGallery{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  min-width:0;
+  min-height:0;
+}
+.rentalPreviewGalleryPair{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.rentalPreviewGallery .rentalPreviewImage{
+  width:100%;
+  min-height:0;
+  aspect-ratio:16/9;
+}
 .rentalPreviewPhotoCounterMobile{display:none}
+@media(min-width:851px){
+  .rentalPreviewCard{
+    grid-template-columns:minmax(0,1fr);
+    min-height:0;
+  }
+  .rentalPreviewDetails{
+    align-items:flex-start;
+    justify-content:flex-start;
+    padding:52px 64px 58px;
+  }
+  .rentalPreviewDetails dl{width:min(100%,680px)}
+  .rentalPreviewDescription{max-width:900px}
+}
 @media(max-width:850px){
-  .rentalPreviewGallery,.rentalPreviewGalleryPair{grid-template-columns:minmax(0,1fr);min-height:500px}
-  .rentalPreviewGallery .rentalPreviewImage{min-height:500px}
+  .rentalPreviewGallery,.rentalPreviewGalleryPair{
+    grid-template-columns:minmax(0,1fr);
+    min-height:0;
+  }
+  .rentalPreviewGallery .rentalPreviewImage{
+    min-height:0;
+    aspect-ratio:16/9;
+  }
   .rentalPreviewGallery .rentalPreviewSecondaryImage{display:none}
   .rentalPreviewPhotoCounterDesktop{display:none}
   .rentalPreviewPhotoCounterMobile{display:inline}
 }
 @media(max-width:560px){
-  .rentalPreviewGallery,.rentalPreviewGallery .rentalPreviewImage{min-height:360px}
+  .rentalPreviewGallery .rentalPreviewImage{
+    min-height:0;
+    aspect-ratio:4/3;
+  }
 }
