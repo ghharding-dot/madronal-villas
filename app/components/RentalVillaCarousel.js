@@ -27,6 +27,7 @@ function weeklyPrice(villa, spanish) {
 export default function RentalVillaCarousel({ locale = 'en' }) {
   const [villas, setVillas] = useState([]);
   const [index, setIndex] = useState(0);
+  const [photoIndex, setPhotoIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [unavailable, setUnavailable] = useState(false);
   const spanish = locale === 'es';
@@ -65,8 +66,10 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
   const enquiryHref = villa
     ? `https://www.pfeuroasia.com/luxury-villa-rentals?villa=${encodeURIComponent(villa.reference)}&utm_source=madronalvillas&utm_medium=referral&utm_campaign=${campaign}#villa-enquiry`
     : collectionHref;
-  const move = (direction) => setIndex((current) => (current + direction + villas.length) % villas.length);
-  const image = villa?.galleryImages?.find(Boolean) || villa?.image;
+  const move = (direction) => { setIndex((current) => (current + direction + villas.length) % villas.length); setPhotoIndex(0); };
+  const photos = Array.from(new Set([...(villa?.galleryImages || []), villa?.image].filter(Boolean)));
+  const image = photos[photoIndex] || villa?.image;
+  const amenities = String(villa?.amenities || '').split(/,|\n/).map((item) => item.trim()).filter(Boolean);
 
   return <section className="rentalPreview" aria-labelledby={`rental-preview-${locale}`}>
     <div className="wrap rentalPreviewHeading">
@@ -88,6 +91,12 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
           <p className="rentalPreviewPrice">{weeklyPrice(villa, spanish)}</p>
           <dl><div><dt>{spanish ? 'Dormitorios' : 'Bedrooms'}</dt><dd>{villa.bedrooms || '—'}</dd></div><div><dt>{spanish ? 'Baños' : 'Bathrooms'}</dt><dd>{villa.bathrooms || '—'}</dd></div><div><dt>{spanish ? 'Huéspedes' : 'Sleeps'}</dt><dd>{villa.guests || '—'}</dd></div></dl>
           {villa.description && <p className="rentalPreviewDescription">{villa.description}</p>}
+          {photos.length > 1 && <div className="rentalPreviewPhotoControls" aria-label={spanish ? 'Fotografías de la villa' : 'Villa photographs'}>
+            <button type="button" onClick={() => setPhotoIndex((current) => (current - 1 + photos.length) % photos.length)} aria-label={spanish ? 'Foto anterior' : 'Previous photograph'}>←</button>
+            <span>{spanish ? 'Fotos' : 'Photos'} {photoIndex + 1} / {photos.length}</span>
+            <button type="button" onClick={() => setPhotoIndex((current) => (current + 1) % photos.length)} aria-label={spanish ? 'Foto siguiente' : 'Next photograph'}>→</button>
+          </div>}
+          {amenities.length > 0 && <details className="rentalPreviewAmenities"><summary>{spanish ? 'Características y servicios' : 'Amenities and features'}</summary><p>{amenities.join(' · ')}</p></details>}
           <p className="rentalPreviewNote">{spanish ? 'Disponibilidad y precio sujetos a confirmación. La selección completa incluye más de 100 villas.' : 'Availability and price are subject to confirmation. The complete collection includes more than 100 villas.'}</p>
           <a className="btn gold" href={enquiryHref}>{spanish ? 'Consultar esta villa' : 'Request this villa'}</a>
         </div>
