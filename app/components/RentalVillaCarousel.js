@@ -69,6 +69,8 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
   const move = (direction) => { setIndex((current) => (current + direction + villas.length) % villas.length); setPhotoIndex(0); };
   const photos = Array.from(new Set([...(villa?.galleryImages || []), villa?.image].filter(Boolean)));
   const image = photos[photoIndex] || villa?.image;
+  const secondPhotoIndex = photos.length > 1 ? (photoIndex + 1) % photos.length : 0;
+  const secondImage = photos[secondPhotoIndex];
   const amenities = String(villa?.amenities || '').split(/,|\n/).map((item) => item.trim()).filter(Boolean);
 
   return <section id="rental-carousel" className="rentalPreview" aria-labelledby={`rental-preview-${locale}`}>
@@ -79,11 +81,17 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
 
     {villa ? <>
       <div className="wrap rentalPreviewCard">
-        <a className="rentalPreviewImage" href={enquiryHref} aria-label={`${spanish ? 'Consultar' : 'Enquire about'} ${villa.title}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img key={image} src={image} alt={`${villa.title}, ${villa.location}`} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
-          <span>{String(index + 1).padStart(2, '0')} / {String(villas.length).padStart(2, '0')}</span>
-        </a>
+        <div className={`rentalPreviewGallery${photos.length > 1 ? ' rentalPreviewGalleryPair' : ''}`}>
+          <a className="rentalPreviewImage rentalPreviewMainImage" href={enquiryHref} aria-label={`${spanish ? 'Consultar' : 'Enquire about'} ${villa.title}`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img key={image} src={image} alt={`${villa.title}, ${villa.location} – ${spanish ? 'foto' : 'photo'} ${photoIndex + 1}`} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+            <span>{String(index + 1).padStart(2, '0')} / {String(villas.length).padStart(2, '0')}</span>
+          </a>
+          {photos.length > 1 && <a className="rentalPreviewImage rentalPreviewSecondaryImage" href={enquiryHref} aria-label={`${spanish ? 'Consultar' : 'Enquire about'} ${villa.title}`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img key={secondImage} src={secondImage} alt={`${villa.title}, ${villa.location} – ${spanish ? 'foto' : 'photo'} ${secondPhotoIndex + 1}`} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+          </a>}
+        </div>
         <div className="rentalPreviewDetails">
           <p className="rentalPreviewCode">{villa.reference}</p>
           <p className="rentalPreviewLocation">{villa.location}</p>
@@ -93,7 +101,8 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
           {villa.description && <p className="rentalPreviewDescription">{villa.description}</p>}
           {photos.length > 1 && <div className="rentalPreviewPhotoControls" aria-label={spanish ? 'Fotografías de la villa' : 'Villa photographs'}>
             <button type="button" onClick={() => setPhotoIndex((current) => (current - 1 + photos.length) % photos.length)} aria-label={spanish ? 'Foto anterior' : 'Previous photograph'}>←</button>
-            <span>{spanish ? 'Fotos' : 'Photos'} {photoIndex + 1} / {photos.length}</span>
+            <span className="rentalPreviewPhotoCounterDesktop">{spanish ? 'Fotos' : 'Photos'} {photoIndex + 1} &amp; {secondPhotoIndex + 1} / {photos.length}</span>
+            <span className="rentalPreviewPhotoCounterMobile">{spanish ? 'Foto' : 'Photo'} {photoIndex + 1} / {photos.length}</span>
             <button type="button" onClick={() => setPhotoIndex((current) => (current + 1) % photos.length)} aria-label={spanish ? 'Foto siguiente' : 'Next photograph'}>→</button>
           </div>}
           {amenities.length > 0 && <details className="rentalPreviewAmenities"><summary>{spanish ? 'Características y servicios' : 'Amenities and features'}</summary><p>{amenities.join(' · ')}</p></details>}
