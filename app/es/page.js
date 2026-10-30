@@ -24,7 +24,7 @@ export default function Inicio() {
       <p className="eyebrow">Madroñal Villas · Más de 100 villas en alquiler</p>
       <h1>Villas de lujo en alquiler.<em>Marbella y Costa del Sol.</em></h1>
       <p>Acceda a más de 100 villas de lujo en alquiler en Marbella, Benahavís, El Madroñal y la Costa del Sol. Comparta sus fechas y requisitos para recibir una selección personalizada.</p>
-      <div className="actions"><Link className="btn gold" href="/es/alquiler-villas-lujo">Explorar más de 100 villas</Link><a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals_es#villa-enquiry">Consulta general de villas — indicar fechas</a></div>
+      <div className="actions"><a className="btn gold" href="#rental-carousel">Explorar villas destacadas ↓</a><a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals_es#villa-enquiry">Consulta general de villas — indicar fechas</a></div>
     </div></section>
 
     <RentalVillaCarousel locale="es" />
