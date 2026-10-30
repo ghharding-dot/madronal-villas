@@ -71,7 +71,7 @@ export default function RentalVillaCarousel({ locale = 'en' }) {
   const image = photos[photoIndex] || villa?.image;
   const amenities = String(villa?.amenities || '').split(/,|\n/).map((item) => item.trim()).filter(Boolean);
 
-  return <section className="rentalPreview" aria-labelledby={`rental-preview-${locale}`}>
+  return <section id="rental-carousel" className="rentalPreview" aria-labelledby={`rental-preview-${locale}`}>
     <div className="wrap rentalPreviewHeading">
       <div><p className="eyebrow">{spanish ? 'Una selección privada' : 'A private collection'}</p><h2 id={`rental-preview-${locale}`}>{spanish ? 'Una muestra de las villas disponibles.' : 'A glimpse of what is available.'}</h2></div>
       <a className="under" href={collectionHref}>{spanish ? 'Ver la selección completa en PF EuroAsia →' : 'View the full selection on PF EuroAsia →'}</a>
