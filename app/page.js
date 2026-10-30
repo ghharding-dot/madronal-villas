@@ -37,7 +37,7 @@ export default function HomePage() {
             for a personally selected shortlist.
           </p>
           <div className="actions">
-            <Link className="btn gold" href="/luxury-villa-rentals">Explore 100+ rental villas</Link>
+            <a className="btn gold" href="#rental-carousel">Explore featured rental villas ↓</a>
             <a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals#villa-enquiry">General villa enquiry — send your dates</a>
           </div>
         </div>
