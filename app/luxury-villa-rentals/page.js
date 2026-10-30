@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import RentalVillaCarousel from '../components/RentalVillaCarousel';
+import GeneralVillaEnquiry from '../components/GeneralVillaEnquiry';
 
 const enquiryHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas#villa-enquiry';
 const collectionHref = 'https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&utm_medium=referral&utm_campaign=100_plus_villas#villa-rentals-collection';
@@ -69,7 +70,7 @@ export default function LuxuryVillaRentalsPage() {
           <p className="eyebrow">Luxury Villa Rentals &amp; Concierge</p>
           <h1>100+ luxury villas to rent.<em>Marbella &amp; Costa del Sol.</em></h1>
           <p>Access a carefully selected portfolio across Marbella, Benahavís and the Costa del Sol—many available only through private enquiry.</p>
-          <div className="actions"><a className="btn gold" href={enquiryHref}>Send your requirements</a><a className="under" href={collectionHref}>View the current selection</a></div>
+          <div className="actions"><a className="btn gold" href={enquiryHref}>General villa enquiry — send your dates</a><a className="under" href={collectionHref}>View the current selection</a></div>
         </div>
       </section>
 
@@ -81,6 +82,8 @@ export default function LuxuryVillaRentalsPage() {
       </div></div></section>
 
       <RentalVillaCarousel />
+
+      <GeneralVillaEnquiry />
 
       <section className="rentalHubStats" aria-label="Rental collection highlights"><div className="wrap rentalHubStatsGrid">
         <div><strong>100+</strong><span>Luxury villas</span></div><div><strong>6</strong><span>Prime rental areas</span></div><div><strong>Private</strong><span>Tailored shortlist</span></div><div><strong>Complete</strong><span>Concierge support</span></div>
