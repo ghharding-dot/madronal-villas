@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
-const RESERVATIONS_EMAIL = 'reservations@madronalvillas.com';
+const ENQUIRY_EMAIL = 'enquiry@pfeuroasia.com';
 const FROM_EMAIL = 'Madroñal Villas <reservations@madronalvillas.com>';
 
 function escapeHtml(value = '') {
@@ -80,7 +80,7 @@ export async function POST(request) {
 
     await sendEmail({
       from: FROM_EMAIL,
-      to: [RESERVATIONS_EMAIL],
+      to: [ENQUIRY_EMAIL],
       reply_to: email.trim(),
       subject: `New reservation enquiry: ${name.trim()} — ${villa}`,
       html: `
@@ -102,21 +102,25 @@ export async function POST(request) {
       `,
     });
 
-    await sendEmail({
+    try {
+      await sendEmail({
       from: FROM_EMAIL,
       to: [email.trim()],
-      reply_to: RESERVATIONS_EMAIL,
+      reply_to: ENQUIRY_EMAIL,
       subject: 'We have received your Madroñal Villas enquiry',
       html: `
         <div style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#1a1a18;line-height:1.7">
           <p style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#8c744a">Madroñal Villas · Private Collection</p>
           <h1 style="font-family:Georgia,serif;font-weight:400">Thank you, ${safe.name}.</h1>
-          <p>Your enquiry has been safely received. A member of our Private Concierge team will contact you personally regarding availability and the next steps.</p>
+          <p>Your enquiry has been safely received. The PF EuroAsia rental enquiries team will contact you personally regarding availability and the next steps.</p>
           <p><strong>Villa:</strong> ${safe.villa}<br /><strong>Arrival:</strong> ${safe.arrival || 'To be confirmed'}<br /><strong>Departure:</strong> ${safe.departure || 'To be confirmed'}</p>
-          <p>Warm regards,<br />Madroñal Villas Private Collection</p>
+          <p>Warm regards,<br />PF EuroAsia Rental Enquiries</p>
         </div>
       `,
-    });
+      });
+    } catch (error) {
+      console.error('Reservation acknowledgement email error:', error);
+    }
 
     return NextResponse.json({ ok: true });
   } catch (error) {
