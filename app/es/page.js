@@ -2,6 +2,7 @@ import Link from 'next/link';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import GeneralVillaEnquiry from '../components/GeneralVillaEnquiry';
+import RentalVillaCarousel from '../components/RentalVillaCarousel';
 
 const standards = [
   'Internet de fibra de 1 Gbps', 'Wi-Fi 7 en toda la propiedad', 'Seguridad privada 24 horas',
@@ -25,6 +26,10 @@ export default function Inicio() {
       <p>Acceda a más de 100 villas de lujo en alquiler en Marbella, Benahavís, El Madroñal y la Costa del Sol. Comparta sus fechas y requisitos para recibir una selección personalizada.</p>
       <div className="actions"><Link className="btn gold" href="/es/alquiler-villas-lujo">Explorar más de 100 villas</Link><a className="under" href="https://www.pfeuroasia.com/luxury-villa-rentals?utm_source=madronalvillas&amp;utm_medium=referral&amp;utm_campaign=homepage_rentals_es#villa-enquiry">Consulta general de villas — indicar fechas</a></div>
     </div></section>
+
+    <RentalVillaCarousel locale="es" />
+
+
 
     <section className="rentalCollectionFeature">
       <div className="rentalCollectionImage" role="img" aria-label="Piscina y terraza de una villa de lujo en Marbella" />
