@@ -45,7 +45,7 @@ export default function ReservationForm() {
       setNotice('Thank you. Your enquiry has been received and our Private Concierge team will contact you shortly.');
     } catch (error) {
       setStatus('error');
-      setNotice(error.message || 'Unable to send your enquiry. Please email reservations@madronalvillas.com.');
+      setNotice(error.message || 'Unable to send your enquiry. Please email enquiry@pfeuroasia.com.');
     }
   }
 
